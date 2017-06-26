@@ -1,5 +1,5 @@
 {
-  "name": "@resourcefulhumans/rheactor-bdd-contexts",
+  "name": "@rheactorjs/bdd-contexts",
   "description": "Yadda BDD contexts for RHeactor applications.",
   "publishConfig": {
     "access": "public"
@@ -14,22 +14,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ResourcefulHumans/rheactor-bdd-contexts.git"
+    "url": "https://github.com/RHeactorJS/bdd-contexts.git"
   },
   "author": "Resourceful Humans GmbH <info@resourceful-humans.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ResourcefulHumans/rheactor-bdd-contexts/issues"
+    "url": "https://github.com/RHeactorJS/bdd-contexts/issues"
   },
-  "homepage": "https://github.com/ResourcefulHumans/rheactor-bdd-contexts#readme",
+  "homepage": "https://github.com/RHeactorJS/bdd-contexts#readme",
   "peerDependencies": {
     "chai": "^3.5.0",
     "jsonwebtoken": "^7.1.9",
     "lodash": "^4.16.1",
     "lolex": "^1.5.1",
     "moment": "^2.15.1",
-    "rheactor-server": "8.x >=8.4.0",
-    "rheactor-value-objects": "9.x",
+    "@rheactorjs/server": "8.x >=8.4.0",
+    "@rheactorjs/value-objects": "9.x",
     "supertest": "^3.0.0",
     "yadda": "^1.1.1"
   },

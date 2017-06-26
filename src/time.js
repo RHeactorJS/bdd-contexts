@@ -5,7 +5,7 @@ const English = Yadda.localisation.English
 const dictionary = new Yadda.Dictionary()
 import lolex from 'lolex'
 import moment from 'moment'
-import {ValidationFailedError} from '@resourcefulhumans/rheactor-errors'
+import {ValidationFailedError} from '@rheactorjs/errors'
 import {expect} from 'chai'
 
 let clock

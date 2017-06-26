@@ -88,7 +88,7 @@ function checkJwtProperty (context, type, value, next) {
 }
 
 const checkReference = (context, data, subject, $id) => {
-  expect(data.$context).to.equal('https://github.com/ResourcefulHumans/rheactor-models#Reference')
+  expect(data.$context).to.equal('https://github.com/RHeactorJS/models#Reference')
   subject = utils.template(subject, utils.data(context))
   $id = utils.template($id, utils.data(context))
   expect(data.subject).to.equal(subject)
@@ -103,7 +103,7 @@ const checkReference = (context, data, subject, $id) => {
  */
 const checkList = (list, itemContext, num, total) => {
   expect(list, 'The list should not be undefined').to.not.equal(undefined)
-  expect(list.$context, 'The $context of a list should be defined').to.equal('https://github.com/ResourcefulHumans/rheactor-models#List')
+  expect(list.$context, 'The $context of a list should be defined').to.equal('https://github.com/RHeactorJS/models#List')
   if (total !== undefined) expect(list.total, `The list should have ${total} items`).to.equal(+total)
   if (num !== undefined) expect(list.items.length, `The items array should have ${num} elements`).to.equal(+num)
   list.items.map(item => {
@@ -227,7 +227,7 @@ export const RestClientContext = {
       next()
     })
 
-    // And "user" of the 1st item should reference the "https://github.com/ResourcefulHumans/rheactor-models#User" with $id "{jwt.sub}"
+    // And "user" of the 1st item should reference the "https://github.com/RHeactorJS/models#User" with $id "{jwt.sub}"
     .then(/"([^"]+)" of the ([0-9]+)[a-z]+ item should reference the "([^"]+)" with id "([^"]+)"/, function (node, num, subject, $id, next) {
       const context = this.ctx
       const item = context.response.body.items[num - 1]
@@ -238,7 +238,7 @@ export const RestClientContext = {
       next()
     })
 
-    // And "user" should reference the "https://github.com/ResourcefulHumans/rheactor-models#User" with $id "{jwt.sub}"
+    // And "user" should reference the "https://github.com/RHeactorJS/models#User" with $id "{jwt.sub}"
     .then(/"([^"]+)" should reference the "([^"]+)" with id "([^"]+)"/, function (node, subject, $id, next) {
       const context = this.ctx
       const data = context.response.body[node]
@@ -489,7 +489,7 @@ export const RestClientContext = {
     // Debug stuff
     .then('I print the response', function (next) {
       const context = this.ctx
-      if (context.response.body.$context && context.response.body.$context === 'https://github.com/ResourcefulHumans/rheactor-models#List') {
+      if (context.response.body.$context && context.response.body.$context === 'https://github.com/RHeactorJS/models#List') {
         console.log('List containing', context.response.body.items.length, 'of', context.response.body.total, 'items of', context.response.body.context)
         console.log('Links:')
         console.log(context.response.body.$links)

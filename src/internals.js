@@ -1,6 +1,6 @@
 import Yadda from 'yadda'
-import {changeEmailToken, accountActivationToken, lostPasswordToken, GrantSuperUserPermissionsCommand} from 'rheactor-server'
-import {EmailValue, URIValue} from 'rheactor-value-objects'
+import {changeEmailToken, accountActivationToken, lostPasswordToken, GrantSuperUserPermissionsCommand} from 'server'
+import {EmailValue, URIValue} from 'value-objects'
 import {utils} from './util/storage'
 
 const English = Yadda.localisation.English
