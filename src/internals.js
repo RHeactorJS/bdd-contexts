@@ -1,5 +1,5 @@
 import Yadda from 'yadda'
-import {changeEmailToken, accountActivationToken, lostPasswordToken, GrantSuperUserPermissionsCommand} from 'server'
+import {changeEmailToken, accountActivationToken, lostPasswordToken, GrantSuperUserPermissionsCommand} from '@rheactorjs/server'
 import {EmailValue, URIValue} from '@rheactorjs/value-objects'
 import {utils} from './util/storage'
 
