@@ -7,4 +7,4 @@
 [![semantic-release](https://img.shields.io/badge/semver-semantic%20release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![Code Climate](https://codeclimate.com/github/RHeactorJS/bdd-contexts/badges/gpa.svg)](https://codeclimate.com/github/RHeactorJS/bdd-contexts)
 
-[Yadda](https://github.com/acuminous/yadda) BDD contexts for [RHeactor applications](https://github.com/RHeactor).
+[Yadda](https://github.com/acuminous/yadda) BDD contexts for [RHeactorJS applications](https://github.com/RHeactorJS).

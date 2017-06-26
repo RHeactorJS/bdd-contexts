@@ -1,6 +1,6 @@
 {
   "name": "@rheactorjs/bdd-contexts",
-  "description": "Yadda BDD contexts for RHeactor applications.",
+  "description": "Yadda BDD contexts for RHeactorJS applications.",
   "publishConfig": {
     "access": "public"
   },
