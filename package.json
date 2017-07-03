@@ -22,7 +22,7 @@
     "url": "https://github.com/RHeactorJS/bdd-contexts/issues"
   },
   "homepage": "https://github.com/RHeactorJS/bdd-contexts#readme",
-  "peerDependencies": {
+  "dependencies": {
     "@rheactorjs/server": "1.x",
     "@rheactorjs/value-objects": "1.x",
     "chai": "^3.5.0",
