@@ -1,12 +1,13 @@
 /* global process */
 
 import Yadda from 'yadda'
-const English = Yadda.localisation.English
-const dictionary = new Yadda.Dictionary()
 import lolex from 'lolex'
 import moment from 'moment'
 import {ValidationFailedError} from '@rheactorjs/errors'
 import {expect} from 'chai'
+
+const English = Yadda.localisation.English
+const dictionary = new Yadda.Dictionary()
 
 let clock
 const setClock = time => {
