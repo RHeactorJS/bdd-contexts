@@ -466,7 +466,7 @@ export const RestClientContext = {
           $context: context.response.body.$context,
           _token: context.response.body.token
         },
-        JSON.parse(new Buffer(context.response.body.token.split('.')[1], 'base64').toString('binary'))
+        JSON.parse(Buffer.from(context.response.body.token.split('.')[1], 'base64').toString('binary'))
       ))
       jwtTokenStore = name
       next()
@@ -480,7 +480,7 @@ export const RestClientContext = {
           $context: tokenContext,
           _token: value
         },
-        JSON.parse(new Buffer(value.split('.')[1], 'base64').toString('binary')))
+        JSON.parse(Buffer.from(value.split('.')[1], 'base64').toString('binary')))
       )
       jwtTokenStore = name
       next()
