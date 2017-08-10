@@ -1,5 +1,7 @@
 # bdd-contexts
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/RHeactorJS/bdd-contexts.svg)](https://greenkeeper.io/)
+
 [![npm version](https://img.shields.io/npm/v/@rheactorjs/bdd-contexts.svg)](https://www.npmjs.com/package/@rheactorjs/bdd-contexts)
 [![Build Status](https://travis-ci.org/RHeactorJS/bdd-contexts.svg?branch=master)](https://travis-ci.org/RHeactorJS/bdd-contexts)
 [![monitored by greenkeeper.io](https://img.shields.io/badge/greenkeeper.io-monitored-brightgreen.svg)](http://greenkeeper.io/) 
